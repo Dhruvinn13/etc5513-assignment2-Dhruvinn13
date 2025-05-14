@@ -4,7 +4,11 @@ author: "Dhruvin Modh"
 format: html
 editor: visual
 ---
+
 This is a different change added on main branch to create a conflict.
+
+This line was added on testbranch to practice branching.
+
 
 ## Introduction
 
@@ -24,5 +28,51 @@ I saved this document as example.qmd, clicked Render, and it successfully render
 
 ```{r}
 knitr::include_graphics("Images/knitted_file.png")
+```
+
+
+## 2 - Initialising Git Repository and Push to GitHub
+
+After setting up my Quarto document, I moved on to version control setup using Git. And once i had my local repository ready, I logged in to GitHub and created a new repo called ETC5513-Assignment-2.
+
+I used these commands for connecting to git repo. - git remote add origin - git branch -M main - git push -u origin main
+
+After that I checked my GitHub repo and saw that all my files had appeared there. This confirmed that my initial commit was now pushed successfully.
+
+```{r}
+knitr::include_graphics("Images/repo_push_ss.png")
+```
+## 3 - Creating testbranch, Editing of example.qmd, and Push to GitHub
+
+After completing my push on the main branch, I created a new branch called testbranch using git *checkout -b testbranch* command.
+
+```{r}
+knitr::include_graphics("Images/testbranch_ss.png")
+```
+
+Then, I opened example.qmd and added this line just below my qmd setup:
+
+“This line was added on testbranch to practice branching.”
+
+After that, I pushed test branch to GitHub and confirmed that new line was added in the qmd file. 
+```{r}
+knitr::include_graphics("Images/testbranch_update.png")
+```
+## 4 - Adding Data Folder and Amend Commiting it on testbranch
+
+With my testbranch pushed, I moved on to adding the data folder required for this assignment.
+
+I created a new folder named data in my project and placed my Assignment 1 files inside it.
+
+After adding the folder, I staged it. And instead of making a new commit, I amended my last commit to include the data folder. I then force pushed this amended commit to GitHub using these commands :
+
+*git add data*
+*git commit --amend --no-edit*
+*git push --force*
+
+I thereafter visited GitHub, switched to testbranch, and confirmed that the data folder was now visible online.
+
+```{r}
+knitr::include_graphics("Images/data_folder.png")
 ```
 
