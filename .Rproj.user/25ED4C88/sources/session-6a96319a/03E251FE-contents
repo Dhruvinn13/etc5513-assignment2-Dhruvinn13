@@ -1,0 +1,27 @@
+---
+title: "Assignment-2"
+author: "Dhruvin Modh"
+format: html
+editor: visual
+---
+
+## Introduction
+
+This guide provides a step-by-step demonstration of collaborative and reproducible workflows using Git, GitHub, the command-line interface, and Quarto in RStudio.
+
+## 1 - Creation of a RStudio Project
+
+To begin the assignment, I started by setting up a new RStudio project. I did this by going to File \> New Project \> New Directory. I named the project ETC5513-Assignment-2.
+
+Once my project folder was ready, I created a Quarto document. I set HTML as the output format and typed my name as the author. I basically didn’t make any other changes because the goal here was just to check if I could knit it properly.
+
+```{r}
+knitr::include_graphics("Images/qmd_setup.png")
+```
+
+I saved this document as example.qmd, clicked Render, and it successfully rendered into example.html.
+
+```{r}
+knitr::include_graphics("Images/knitted_file.png")
+```
+
