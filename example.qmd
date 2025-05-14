@@ -4,6 +4,7 @@ author: "Dhruvin Modh"
 format: html
 editor: visual
 ---
+This line was added on testbranch to practice branching.
 
 ## Introduction
 
@@ -25,3 +26,15 @@ I saved this document as example.qmd, clicked Render, and it successfully render
 knitr::include_graphics("Images/knitted_file.png")
 ```
 
+
+## 2 - Initialising Git Repository and Push to GitHub
+
+After setting up my Quarto document, I moved on to version control setup using Git. And once i had my local repository ready, I logged in to GitHub and created a new repo called ETC5513-Assignment-2.
+
+I used these commands for connecting to git repo. - git remote add origin - git branch -M main - git push -u origin main
+
+After that I checked my GitHub repo and saw that all my files had appeared there. This confirmed that my initial commit was now pushed successfully.
+
+```{r}
+knitr::include_graphics("Images/repo_push_ss.png")
+```
